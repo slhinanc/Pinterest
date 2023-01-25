@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.navbar{
+    background: #fff;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid lightgrey 3px;
+    z-index: 2;
+}
+.navbar ul{
+    float: right;
+    list-style-type: none;
+    margin-top: -45px;
+}
+
+.navbar ul li{
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    padding: 12px 10px;
+    box-shadow: none;
+}
+
+.navbar ul li:hover :not(#red,#gray){
+    border-radius: 40px;
+    padding: 12px 10px;
+    background: rgb(244, 241, 241);
+}
+
+#red{
+    color: white;
+    background: red;
+    border-radius: 40px;
+    padding: 12px 10px;
+}
+
+#red:hover{
+    opacity: 0.8;
+}
+
+#gray{
+    background: rgb(244, 241, 241);
+    border-radius: 40px;
+    padding: 12px 10px; 
+}
+
+#gray:hover{
+    background: lightgray;
+}
+
+.logo{
+    margin: 40px 0 20px 40px; 
+}
+
+.logo img{
+    width: 120px;
+    height: 30px;
+}
+
+/* orta kısım */
+
+.main-container{
+    width: 100%;
+    height:100vh;
+    background: rgb(166, 235, 235);
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1{
+    margin-top: 120px;
+    margin-left: -30px;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+}
+
+.text1 h1{
+    color: rgb(21, 101, 84);
+    letter-spacing: 3px;
+    width: 100%;
+    font-size: 60px;
+    
+}
+
+.text1 p{
+    color: rgb(21, 101, 84);
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.button{
+    background: rgb(21, 101, 84);
+    border-radius: 40px;
+    padding: 12px 25px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+.button1{
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    opacity: 0.7;
+}
+
+.right{
+    margin-top: 120px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic1{
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.pic3{
+    width: 200px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.pic4{
+    position: relative;
+    margin-top: -30px;
+    width: 350px;
+    height: 400px;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.pic5{
+    width: 250px;
+    height: 250px;
+}
+
+/* orta 2. kısım */
+
+.main-container2{
+    width: 100%;
+    height:100vh;
+    display: flex;
+}
+
+.left2{
+    width: 50%;
+    height: 100vh;
+}
+
+.pic7{
+    width: 100%;
+    height: 100vh;
+}
+
+.pic8{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin: -500px 0 0 50px;
+    z-index: 0;
+}
+
+.pic9{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin: -520px 0 0 230px;
+    z-index: 1;
+}
+
+.right2{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2{
+    background: rgb(204, 138, 85);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.text2 h1{
+    color: rgb(62, 30, 6);
+    letter-spacing: 3px;
+    width: 100%;
+    font-size: 60px;
+    
+}
+
+.text2 p{
+    color: rgb(62, 30, 6);
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+button{
+    background: rgb(62, 30, 6);
+    border-radius: 40px;
+    padding: 12px 25px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+.button2{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+/* alt kısım */
+
+footer{
+    background: #000;
+}
+.ftcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.footerleft{
+    padding: 30px;
+    width: 50%;
+    border-right: 2px solid lightgrey;
+    top: 5px;
+}
+
+.footerleft ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.footerleft ul li a{
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+
+}
+.footerleft ul li a:hover{
+    opacity: 0.7;
+}
+
+.footerright{
+    width: 50%;
+}
+
+.footerright ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.footerright ul li a img{
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+}
+
+.footerright ul li a img:hover{
+    opacity: 0.7;
+}
+
+.small{
+    color: gray;
+    background: #000;
+    text-align: center;
+}
